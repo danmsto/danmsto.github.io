@@ -4,10 +4,10 @@ const content = {
     siteHeader: "Daniel Stoddart",
     siteSubheader: "Coding Academy Graduate & Former Industrial R&D Chemist",
     siteHeaders: {
-        uni: "MChem in Chemistry => Industrial R&D Chemist",
-        // rnd: "Former Industrial R&D Chemist",
-        cod: "Coding Academy Graduate => Software Developer",
-        // dev1: "Software Developer",
+        uni: "MChem in Chemistry",
+        rnd: "Former Industrial R&D Chemist",
+        cod: "Coding Academy Graduate",
+        dev1: "Software Developer",
     },
     homeHeading: "Graduate of the EyUp Full Stack Development Academy",
     homeBody:
