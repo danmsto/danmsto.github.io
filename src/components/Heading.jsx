@@ -17,13 +17,13 @@ function Heading() {
 
     return (
         <div>
-            {"danmsto> " + content.siteHeaders.uni}
+            {"DS> " + content.siteHeaders.uni}
             <br />
-            {/* {"danmsto> " + content.siteHeaders.rnd}
-      <br /> */}
-            {"danmsto> " + content.siteHeaders.cod}
-            {/* <br />
-      {"danmsto> " + content.siteHeaders.dev1} */}
+            {"DS> " + content.siteHeaders.rnd}
+            <br />
+            {"DS> " + content.siteHeaders.cod}
+            <br />
+            {"DS> " + content.siteHeaders.dev1}
             <span id="consoleEffect" onLoad={fadeEffect()}>
                 _
             </span>

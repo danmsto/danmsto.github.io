@@ -50,7 +50,7 @@ function App() {
                     <Row style={{ flexGrow: 1 }}>
                         <Col xs={0} sm={0}>
                             <Navbar.Brand className="brandText" align="start">
-                                {"danmsto> Dan Stoddart"}
+                                {"DS> Dan Stoddart"}
                             </Navbar.Brand>
                         </Col>
                         <Col className="navbarCol" xs="auto" sm="auto">
