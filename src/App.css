@@ -14,8 +14,8 @@ body {
 }
 
 @font-face {
-    font-family: FiraCode;
-    src: url("fonts/FiraCodeNerdFont-Regular.ttf") format("truetype");
+    font-family: Cousine;
+    src: url("fonts/Cousine-Regular.ttf") format("truetype");
 }
 
 .App {
@@ -87,13 +87,13 @@ body {
 }
 
 .brandText {
-    font-family: "FiraCode", monospace;
+    font-family: "Cousine", monospace;
     color: var(--text);
     font-size: large;
 }
 
 .headerText {
-    font-family: "FiraCode", monospace;
+    font-family: "Cousine", monospace;
     color: var(--text);
     font-size: large;
     margin-bottom: 20px;
