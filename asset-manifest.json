@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c76941c4.css",
-    "main.js": "/static/js/main.91006fba.js",
+    "main.css": "/static/css/main.d23a05a5.css",
+    "main.js": "/static/js/main.76ef1d90.js",
+    "static/media/FiraCodeNerdFont-Regular.ttf": "/static/media/FiraCodeNerdFont-Regular.8c5f24724be1633a170f.ttf",
     "static/media/wipBackground.jpg": "/static/media/wipBackground.ff2d3af62ebda0dc10ea.jpg",
     "static/media/sweetrelease.jpg": "/static/media/sweetrelease.441859372c91dc0fb83b.jpg",
     "static/media/ferrioimage.png": "/static/media/ferrioimage.bef6ddb69c9cf4d39997.png",
@@ -14,7 +15,6 @@
     "static/media/lablogicimage2.png": "/static/media/lablogicimage2.954741c660ebc30b2f98.png",
     "static/media/ferrioimage1.png": "/static/media/ferrioimage1.3c71d8701acf939658a6.png",
     "static/media/doughjoe2.png": "/static/media/doughjoe2.7233748d2ee5bb211a4c.png",
-    "static/media/Cousine-Regular.ttf": "/static/media/Cousine-Regular.f053f56e9dbfe67428d0.ttf",
     "static/media/doughjoe1.png": "/static/media/doughjoe1.61c54fd38adeb0add8d9.png",
     "static/media/OpenSans-Regular.ttf": "/static/media/OpenSans-Regular.17e98b9e5586529b13cc.ttf",
     "static/media/poolpool2.png": "/static/media/poolpool2.dd956cb095b1bcae35c3.png",
@@ -28,11 +28,11 @@
     "static/media/react.svg": "/static/media/react.903d77ad940b12efaddde2484397ad4a.svg",
     "static/media/js.svg": "/static/media/js.61c1fa6b2ee4eb8ce8d0e0c25ab67854.svg",
     "index.html": "/index.html",
-    "main.c76941c4.css.map": "/static/css/main.c76941c4.css.map",
-    "main.91006fba.js.map": "/static/js/main.91006fba.js.map"
+    "main.d23a05a5.css.map": "/static/css/main.d23a05a5.css.map",
+    "main.76ef1d90.js.map": "/static/js/main.76ef1d90.js.map"
   },
   "entrypoints": [
-    "static/css/main.c76941c4.css",
-    "static/js/main.91006fba.js"
+    "static/css/main.d23a05a5.css",
+    "static/js/main.76ef1d90.js"
   ]
 }
