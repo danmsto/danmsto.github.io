@@ -27,7 +27,7 @@ function Heading() {
             {"DS> " + content.siteHeaders.cod}
             <br />
             {"DS> " + content.siteHeaders.dev1}
-            <span id="consoleEffect" onLoad={fadeEffect}>
+            <span id="consoleEffect" onLoad={fadeEffect()}>
                 _
             </span>
         </div>
