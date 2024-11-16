@@ -1,3 +1,4 @@
+import { ReactEventHandler } from "react";
 import content from "../content/content";
 
 function Heading() {
@@ -6,7 +7,7 @@ function Heading() {
     var bs = getComputedStyle(b);
     if (bs === null) return <></>;
 
-    const fadeEffect = () => {
+    const fadeEffect: ReactEventHandler<HTMLSpanElement> = (_: React.SyntheticEvent<HTMLSpanElement, Event>) => {
         var i = 0;
         const change = () => {
             var doc = document.getElementById("consoleEffect");
@@ -27,7 +28,7 @@ function Heading() {
             {"DS> " + content.siteHeaders.cod}
             <br />
             {"DS> " + content.siteHeaders.dev1}
-            <span id="consoleEffect" onLoad={fadeEffect()}>
+            <span id="consoleEffect" onLoad={fadeEffect}>
                 _
             </span>
         </div>
