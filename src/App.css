@@ -10,12 +10,12 @@ body {
 
 @font-face {
     font-family: OpenSans;
-    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+    src: url("assets/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: Cousine;
-    src: url("fonts/Cousine-Regular.ttf") format("truetype");
+    src: url("assets/Cousine-Regular.ttf") format("truetype");
 }
 
 .App {
@@ -140,12 +140,6 @@ body {
 
 .nav-dropdown {
     flex-grow: 0;
-}
-
-.projectCardContainer {
-    border-radius: "20px";
-    background-color: var(--foreground);
-    margin: "5px";
 }
 
 .linkText {
