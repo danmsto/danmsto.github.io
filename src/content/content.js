@@ -5,7 +5,7 @@ const content = {
     siteSubheader: "Coding Academy Graduate & Former Industrial R&D Chemist",
     siteHeaders: {
         uni: "MChem in Chemistry",
-        rnd: "Former Industrial R&D Chemist",
+        rnd: "Ex-Industrial R&D Chemist",
         cod: "Coding Academy Graduate",
         dev1: "Software Developer",
     },

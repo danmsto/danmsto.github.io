@@ -1,4 +1,4 @@
-import { Button, Carousel, Container, Image } from "react-bootstrap";
+import { Carousel, Container, Image } from "react-bootstrap";
 import projects from "../content/projects.js";
 
 function MyProjects() {
@@ -24,43 +24,27 @@ function MyProjects() {
                     >
                         {p.status}
                     </span>
-                    <Carousel variant="light" className="mb-1" fade interval={null} touch={false}>
+                    <Carousel
+                        variant="light"
+                        className="mb-1"
+                        fade
+                        interval={null}
+                        touch={false}
+                        indicators={false}
+                        controls={false}
+                    >
                         <Carousel.Item key={p.description}>
-                            <img className="carousel-image" src={p.image} alt="Not appearing" />
+                            <img className="carousel-image" src={p.image} alt="Project" />
                             <Carousel.Caption className="mb-4">
-                                <h3>
-                                    <Image src={p.logo}></Image> {p.title}
-                                </h3>
+                                <h4>
+                                    <Image src={p.logo}></Image> {p.title}{" "}
+                                    {p.linkActive && (
+                                        <a href={p.link} target="_blank" rel="noreferrer">
+                                            🡥
+                                        </a>
+                                    )}
+                                </h4>
                                 <p>{p.description}</p>
-                                {p.linkActive && (
-                                    <Button variant="light" href={p.link} target="_blank" rel="noreferrer">
-                                        {p.linkText}
-                                    </Button>
-                                )}
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item key={p.functionality}>
-                            <img className="carousel-image" src={p.image1} alt="Not appearing" />
-                            <Carousel.Caption className="mb-4">
-                                <h3>
-                                    <Image src={p.logo}></Image> {p.title}
-                                </h3>
-                                <p>{p.functionality}</p>
-                                <Button variant="light" href={p.link} target="_blank" rel="noreferrer">
-                                    {p.linkText}
-                                </Button>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item key={p.madeWith}>
-                            <img className="carousel-image" src={p.image2} alt="Not appearing" />
-                            <Carousel.Caption className="mb-4">
-                                <h3>
-                                    <Image src={p.logo}></Image> {p.title}
-                                </h3>
-                                <p>{p.madeWith}</p>
-                                <Button variant="light" href={p.link} target="_blank" rel="noreferrer">
-                                    {p.linkText}
-                                </Button>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
