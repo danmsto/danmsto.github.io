@@ -1,4 +1,4 @@
-import { Carousel, Container, Image } from "react-bootstrap";
+import { Button, Carousel, Container, Image } from "react-bootstrap";
 import projects from "../content/projects.js";
 
 function MyProjects() {
@@ -36,15 +36,15 @@ function MyProjects() {
                         <Carousel.Item key={p.description}>
                             <img className="carousel-image" src={p.image} alt="Project" />
                             <Carousel.Caption className="mb-4">
-                                <h4>
+                                <h3>
                                     <Image src={p.logo}></Image> {p.title}{" "}
-                                    {p.linkActive && (
-                                        <a href={p.link} target="_blank" rel="noreferrer">
-                                            🡥
-                                        </a>
-                                    )}
-                                </h4>
-                                <p>{p.description}</p>
+                                </h3>
+                                <p style={{ marginBottom: 8 }}>{p.description}</p>
+                                {p.linkActive && (
+                                    <Button href={p.link} size="sm">
+                                        Link
+                                    </Button>
+                                )}
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
