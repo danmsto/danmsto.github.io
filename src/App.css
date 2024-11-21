@@ -228,9 +228,9 @@ body {
 }
 
 .btn {
-    background-color: var(--highlight);
+    background-color: transparent;
     color: var(--text);
-    border-color: var(--highlight);
+    border-color: var(--text);
 }
 
 .btn:active {
