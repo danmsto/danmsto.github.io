@@ -37,7 +37,12 @@ function MyProjects() {
                             <img className="carousel-image" src={p.image} alt="Project" />
                             <Carousel.Caption className="mb-4">
                                 <h3>
-                                    <Image src={p.logo}></Image> {p.title}{" "}
+                                    <Image src={p.logo} /> {p.title}{" "}
+                                    {p.symbols?.map((s) => (
+                                        <span className="symbols" title="test">
+                                            {s}
+                                        </span>
+                                    ))}
                                 </h3>
                                 <p style={{ marginBottom: 8 }}>{p.description}</p>
                                 {p.linkActive && (

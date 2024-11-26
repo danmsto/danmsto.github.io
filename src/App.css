@@ -18,6 +18,16 @@ body {
     src: url("assets/Cousine-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: Symbols;
+    src: url("assets/Symbols-Regular.ttf") format("truetype");
+}
+
+.symbols {
+    font-family: "Symbols";
+    margin-right: 5px;
+}
+
 .App {
     text-align: center;
 }

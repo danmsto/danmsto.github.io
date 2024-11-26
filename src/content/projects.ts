@@ -32,6 +32,7 @@ const projects = [
         image: wip,
         logo: duelsLogo,
         status: Status.Active,
+        symbols: [`\ue8ca`, `\ue83e`, `\ue8ba`, `\ue86e`, `\ue76e`, `\ue8d3`],
     },
     {
         title: "bHook",
