@@ -14,8 +14,14 @@ body {
 }
 
 @font-face {
-    font-family: Cousine;
-    src: url("assets/Cousine-Regular.ttf") format("truetype");
+    font-family: CousineNF;
+    src: url("assets/CousineNerdFont-Regular.ttf") format("truetype");
+}
+
+.stackDiv {
+    font-family: "CousineNF";
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .App {
@@ -87,13 +93,13 @@ body {
 }
 
 .brandText {
-    font-family: "Cousine", monospace;
+    font-family: "CousineNF", monospace;
     color: var(--text);
     font-size: large;
 }
 
 .headerText {
-    font-family: "Cousine", monospace;
+    font-family: "CousineNF", monospace;
     color: var(--text);
     font-size: large;
     margin-bottom: 20px;

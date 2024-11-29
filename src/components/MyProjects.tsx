@@ -1,5 +1,6 @@
-import { Button, Carousel, Container, Image } from "react-bootstrap";
+import { Accordion, Carousel, Container, Image } from "react-bootstrap";
 import projects from "../content/projects.js";
+import { Tech, techDealer } from "../content/techDealer.js";
 
 function MyProjects() {
     return (
@@ -36,15 +37,25 @@ function MyProjects() {
                         <Carousel.Item key={p.description}>
                             <img className="carousel-image" src={p.image} alt="Project" />
                             <Carousel.Caption className="mb-4">
-                                <h3>
-                                    <Image src={p.logo}></Image> {p.title}{" "}
-                                </h3>
-                                <p style={{ marginBottom: 8 }}>{p.description}</p>
-                                {p.linkActive && (
-                                    <Button href={p.link} size="sm">
-                                        Link
-                                    </Button>
-                                )}
+                                <Accordion flush>
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header>
+                                            <Image src={p.logo} style={{ marginRight: "5px" }} /> {p.title}
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <h3>
+                                                {p.stack?.map((s: Tech) => (
+                                                    <span key={s} className="stackDiv" title={techDealer[s].label}>
+                                                        {techDealer[s].char}
+                                                    </span>
+                                                ))}
+                                            </h3>
+                                            <h6 style={{ marginBottom: 8 }}>
+                                                {p.description} {p.linkActive && <a href={p.link}>Link</a>}
+                                            </h6>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
