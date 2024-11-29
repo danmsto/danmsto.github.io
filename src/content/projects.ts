@@ -14,6 +14,7 @@ import wip from "./projects/wipBackground.jpg";
 import duelsLogo from "./projects/duelsLogo.png";
 import bHookLogo from "./projects/bHookLogo.png";
 import thinklinkLogo from "./projects/thinklinkLogo.png";
+import { Tech } from "./techDealer";
 
 const Status = {
     Archived: "Archived",
@@ -32,7 +33,7 @@ const projects = [
         image: wip,
         logo: duelsLogo,
         status: Status.Active,
-        symbols: [`\ue8ca`, `\ue83e`, `\ue8ba`, `\ue86e`, `\ue76e`, `\ue8d3`],
+        stack: [Tech.TypeScript, Tech.NodeJS, Tech.NextJS, Tech.Tailwind, Tech.PostgreSQL],
     },
     {
         title: "bHook",
@@ -43,6 +44,7 @@ const projects = [
         image: wip,
         logo: bHookLogo,
         status: Status.Active,
+        stack: [Tech.CSharp, Tech.DotNet],
     },
     {
         title: "ThinkLink",
@@ -53,6 +55,7 @@ const projects = [
         image: wip,
         logo: thinklinkLogo,
         status: Status.Active,
+        stack: [Tech.CSharp, Tech.DotNet],
     },
     {
         title: "LabLogic SPECTra",
@@ -63,6 +66,7 @@ const projects = [
         image: labLogicImage,
         logo: labLogicLogo,
         status: Status.LabLogic,
+        stack: [Tech.CSharp, Tech.DotNet, Tech.Blazor, Tech.SqlServer],
     },
     {
         title: "Ferrio Connect",
@@ -73,26 +77,7 @@ const projects = [
         image: ferrioImage,
         logo: ferriologo,
         status: Status.Ferrio,
-    },
-    {
-        title: "poolpool",
-        description: "Tracker for Zero-sum 1-v-1 games.",
-        madeWith: "JavaScript",
-        link: "https://danmsto.github.io/poolpool/",
-        linkActive: true,
-        image: poolPoolImage,
-        logo: poolPoolLogo,
-        status: Status.Archived,
-    },
-    {
-        title: "DoughJoe Pizza",
-        description: "A mock pizza vendor website, made alongside the rest of my EyUp Skills cohort.",
-        madeWith: "JavaScript React",
-        link: "https://danmsto.github.io/doughjoe-pizza",
-        linkActive: true,
-        image: pizzaImage,
-        logo: pizzaLogo,
-        status: Status.Archived,
+        stack: [Tech.TypeScript, Tech.NodeJS, Tech.React, Tech.CSharp, Tech.DotNet, Tech.CosmosDB],
     },
     {
         title: "Deskotech",
@@ -103,6 +88,18 @@ const projects = [
         image: deskotechImage,
         logo: deskotechLogo,
         status: Status.Archived,
+        stack: [Tech.Java, Tech.Spring, Tech.MySQL, Tech.JavaScript, Tech.NodeJS, Tech.React, Tech.Bootstrap],
+    },
+    {
+        title: "DoughJoe Pizza",
+        description: "A mock pizza vendor website, made alongside the rest of my EyUp Skills cohort.",
+        madeWith: "JavaScript React",
+        link: "https://danmsto.github.io/doughjoe-pizza",
+        linkActive: true,
+        image: pizzaImage,
+        logo: pizzaLogo,
+        status: Status.Archived,
+        stack: [Tech.JavaScript, Tech.NodeJS, Tech.React],
     },
     {
         title: "Sweet Release",
@@ -113,6 +110,18 @@ const projects = [
         image: gameImage,
         logo: gameLogo,
         status: Status.Archived,
+        stack: [Tech.Java],
+    },
+    {
+        title: "poolpool",
+        description: "Tracker for Zero-sum 1-v-1 games.",
+        madeWith: "JavaScript",
+        link: "https://danmsto.github.io/poolpool/",
+        linkActive: true,
+        image: poolPoolImage,
+        logo: poolPoolLogo,
+        status: Status.Archived,
+        stack: [Tech.JavaScript, Tech.HTML, Tech.CSS],
     },
 ];
 

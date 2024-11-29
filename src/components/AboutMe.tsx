@@ -22,7 +22,7 @@ function AboutMe() {
                             <Accordion.Body>
                                 <strong>{experience.heading}</strong>
                                 <br />
-                                <text>{experience.subtitle}</text>
+                                <span>{experience.subtitle}</span>
                                 <ul>
                                     {experience.bulletPoints.map((bulletPoint) => {
                                         return (
