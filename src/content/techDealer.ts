@@ -32,7 +32,7 @@ export const techDealer = {
     [Tech.Spring]: { label: "Spring framework", char: `\ue8ac` },
     [Tech.DotNet]: { label: ".NET framework", char: `\udb82\udeae` },
     [Tech.Blazor]: { label: "Blazor web framework", char: `\ue765` },
-    [Tech.NodeJS]: { label: "Node.js runtime environment", char: `\ued44` },
+    [Tech.NodeJS]: { label: "Node.js runtime environment", char: `\ued0d` },
     [Tech.React]: { label: "React library", char: `\ue7ba` },
     [Tech.NextJS]: { label: "Next.js web framework", char: `\ue83e` },
     [Tech.HTML]: { label: "HTML", char: `\ue736` },

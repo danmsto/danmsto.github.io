@@ -37,7 +37,7 @@ const projects = [
     },
     {
         title: "bHook",
-        description: "Avalonia WPF application for displaying system information.",
+        description: "System-monitoring application using Avalonia.",
         madeWith: "Avalonia/WPF",
         link: "https://github.com/danmsto/bhook",
         linkActive: false,
@@ -48,7 +48,7 @@ const projects = [
     },
     {
         title: "ThinkLink",
-        description: "Simple console application for accessing large media files over a local area network.",
+        description: "Console application for file transfer over LAN.",
         madeWith: "TBD",
         link: "https://github.com/danmsto/thinklink",
         linkActive: false,
@@ -59,7 +59,7 @@ const projects = [
     },
     {
         title: "LabLogic SPECTra",
-        description: "SPECT radiopharmacy Laboratory Inventory Management System (LIMS) software.",
+        description: "SPECT radiopharmacy LIMS software.",
         madeWith: "WinForms",
         link: "https://lablogic.com/nuclear-medicine-and-pet/software/spectra",
         linkActive: true,
@@ -81,7 +81,7 @@ const projects = [
     },
     {
         title: "Deskotech",
-        description: "Hot-desk Booking App, made with the rest of the EyUp Skills Cohort.",
+        description: "Hot-desk Booking App",
         madeWith: "JavaScript React and Java Spring Boot with MySQL",
         link: "https://github.com/danmsto/deskotech",
         linkActive: true,
@@ -92,7 +92,7 @@ const projects = [
     },
     {
         title: "DoughJoe Pizza",
-        description: "A mock pizza vendor website, made alongside the rest of my EyUp Skills cohort.",
+        description: "Mock pizza vendor website.",
         madeWith: "JavaScript React",
         link: "https://danmsto.github.io/doughjoe-pizza",
         linkActive: true,
@@ -103,7 +103,7 @@ const projects = [
     },
     {
         title: "Sweet Release",
-        description: "Text Adventure Game, made with the rest of the EyUp Skills Cohort.",
+        description: "Text Adventure Game.",
         madeWith: "Java",
         link: "https://github.com/danmsto/sweet-release",
         linkActive: true,
@@ -114,7 +114,7 @@ const projects = [
     },
     {
         title: "poolpool",
-        description: "Tracker for Zero-sum 1-v-1 games.",
+        description: "Tracker for head-to-head scores.",
         madeWith: "JavaScript",
         link: "https://danmsto.github.io/poolpool/",
         linkActive: true,
