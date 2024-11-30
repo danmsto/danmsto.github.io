@@ -52,7 +52,7 @@ const ProjectCarouselList = () => {
                                             </h3>
                                             {p.linkActive ? (
                                                 <h6>
-                                                    <a href={p.link} className="projLink">
+                                                    <a href={p.link} target="_blank" className="projLink">
                                                         {p.description} {`\uf08e`}
                                                     </a>
                                                 </h6>
