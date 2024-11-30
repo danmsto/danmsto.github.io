@@ -1,8 +1,8 @@
 import { Accordion, Carousel, Container, Image } from "react-bootstrap";
 import projects from "../content/projects.js";
-import { Tech, techDealer } from "../content/techDealer.js";
+import { Tech, stackDealer } from "../content/techDealer.js";
 
-function MyProjects() {
+const ProjectCarouselList = () => {
     return (
         <Container className="p-0">
             {projects.map((p) => (
@@ -45,14 +45,22 @@ function MyProjects() {
                                         <Accordion.Body>
                                             <h3>
                                                 {p.stack?.map((s: Tech) => (
-                                                    <span key={s} className="stackDiv" title={techDealer[s].label}>
-                                                        {techDealer[s].char}
+                                                    <span key={s} className="stackDiv" title={stackDealer[s].label}>
+                                                        {stackDealer[s].char}
                                                     </span>
                                                 ))}
                                             </h3>
-                                            <h6 style={{ marginBottom: 8 }}>
-                                                {p.description} {p.linkActive && <a href={p.link}>Link</a>}
-                                            </h6>
+                                            {p.linkActive ? (
+                                                <h6>
+                                                    <a href={p.link} className="projLink">
+                                                        {p.description} {`\uf08e`}
+                                                    </a>
+                                                </h6>
+                                            ) : (
+                                                <h6>
+                                                    <span>{p.description}</span>
+                                                </h6>
+                                            )}
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </Accordion>
@@ -63,6 +71,6 @@ function MyProjects() {
             ))}
         </Container>
     );
-}
+};
 
-export default MyProjects;
+export default ProjectCarouselList;

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import content from "../content/content";
+import introduction from "../content/introduction";
 
-function Heading() {
+const HeadingConsoleDisplay = () => {
     useEffect(() => {
         const b = document.querySelector("body");
         if (!b) return;
@@ -27,16 +27,16 @@ function Heading() {
 
     return (
         <div>
-            {"DS> " + content.siteHeaders.uni}
+            {"DS> " + introduction.points.uni}
             <br />
-            {"DS> " + content.siteHeaders.rnd}
+            {"DS> " + introduction.points.rnd}
             <br />
-            {"DS> " + content.siteHeaders.cod}
+            {"DS> " + introduction.points.cod}
             <br />
-            {"DS> " + content.siteHeaders.dev1}
+            {"DS> " + introduction.points.dev1}
             <span id="consoleEffect">█</span>
         </div>
     );
-}
+};
 
-export default Heading;
+export default HeadingConsoleDisplay;

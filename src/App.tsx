@@ -1,11 +1,11 @@
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import MyProjects from "./components/MyProjects";
-import AboutMe from "./components/AboutMe";
-import Heading from "./components/Heading";
-import Badges from "./components/Badges";
-import badgeDealer from "./content/badgeDealer";
+import ProjectCarouselList from "./components/ProjectCarouselList";
+import ExperienceAccordion from "./components/ExperienceAccordion";
+import HeadingConsoleDisplay from "./components/HeadingConsoleDisplay";
+import BadgeDisplay from "./components/BadgeDisplay";
+import { SVG, svgDealer } from "./content/svgDealer";
 import "./App.css";
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
                         <Col className="navbarCol" xs="auto" sm="auto">
                             <Nav.Link href="https://github.com/danmsto" style={{ alignItems: "center" }}>
                                 <img
-                                    src={badgeDealer.github}
+                                    src={svgDealer[SVG.GitHub]}
                                     className="linkImg badgeBrightness"
                                     alt="GitHub Logo"
                                     title="GitHub"
@@ -64,7 +64,7 @@ function App() {
                         <Col className="navbarCol" xs="auto" sm="auto">
                             <Nav.Link href="https://linkedin.com/in/danmsto">
                                 <img
-                                    src={badgeDealer.linkedin}
+                                    src={svgDealer[SVG.LinkedIn]}
                                     className="linkImg badgeBrightness"
                                     alt="LinkedIn Logo"
                                     title="LinkedIn"
@@ -91,19 +91,19 @@ function App() {
             <Container>
                 <Row>
                     <Col md={8} sm={12} xs={12} className="headerText">
-                        <Heading />
+                        <HeadingConsoleDisplay />
                     </Col>
                 </Row>
                 <Row>
                     <Col md={8} sm={12} xs={12}>
                         <Row className="blackText">
-                            <MyProjects />
+                            <ProjectCarouselList />
                         </Row>
                     </Col>
                     <Col md={4} sm={12} xs={12} className="blackText">
-                        <AboutMe />
+                        <ExperienceAccordion />
                         <Row className="bodySection mt-2">
-                            <Badges />
+                            <BadgeDisplay />
                         </Row>
                     </Col>
                 </Row>

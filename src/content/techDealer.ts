@@ -24,7 +24,7 @@ export enum Tech {
     PostgreSQL,
 }
 
-export const techDealer = {
+export const stackDealer = {
     [Tech.Java]: { label: "Java", char: `\ue738` },
     [Tech.JavaScript]: { label: "JavaScript", char: `\ue781` },
     [Tech.TypeScript]: { label: "TypeScript", char: `\ue8ca` },

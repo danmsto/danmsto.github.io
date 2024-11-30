@@ -1,30 +1,31 @@
 import { Accordion } from "react-bootstrap";
-import content from "../content/content";
+import experience from "../content/experience";
+import { svgDealer } from "../content/svgDealer";
 
-function AboutMe() {
+const ExperienceAccordion = () => {
     return (
         <>
-            <Accordion defaultActiveKey={content.experience[0].heading}>
-                {content.experience.map((experience) => {
+            <Accordion defaultActiveKey={experience[0].heading}>
+                {experience.map((e) => {
                     return (
-                        <Accordion.Item eventKey={experience.heading} key={experience.heading}>
+                        <Accordion.Item eventKey={e.heading} key={e.heading}>
                             <Accordion.Header>
                                 <img
                                     className="badgeBrightness"
-                                    src={experience.image}
-                                    alt={experience.heading}
+                                    src={svgDealer[e.image]}
+                                    alt={e.heading}
                                     height={48}
                                     width={48}
                                 />
-                                &emsp;{experience.location}&emsp;
-                                <em style={{ fontSize: 12 }}>{experience.dates}</em>
+                                &emsp;{e.location}&emsp;
+                                <em style={{ fontSize: 12 }}>{e.dates}</em>
                             </Accordion.Header>
                             <Accordion.Body>
-                                <strong>{experience.heading}</strong>
+                                <strong>{e.heading}</strong>
                                 <br />
-                                <span>{experience.subtitle}</span>
+                                <span>{e.subtitle}</span>
                                 <ul>
-                                    {experience.bulletPoints.map((bulletPoint) => {
+                                    {e.bulletPoints.map((bulletPoint) => {
                                         return (
                                             <li className="experienceBulletPoints" key={bulletPoint}>
                                                 {bulletPoint}
@@ -39,6 +40,6 @@ function AboutMe() {
             </Accordion>
         </>
     );
-}
+};
 
-export default AboutMe;
+export default ExperienceAccordion;
