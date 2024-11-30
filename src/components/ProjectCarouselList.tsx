@@ -50,9 +50,17 @@ const ProjectCarouselList = () => {
                                                     </span>
                                                 ))}
                                             </h3>
-                                            <h6 style={{ marginBottom: 8 }}>
-                                                {p.description} {p.linkActive && <a href={p.link}>Link</a>}
-                                            </h6>
+                                            {p.linkActive ? (
+                                                <h6>
+                                                    <a href={p.link} className="projLink">
+                                                        {p.description} {`\uf08e`}
+                                                    </a>
+                                                </h6>
+                                            ) : (
+                                                <h6>
+                                                    <span>{p.description}</span>
+                                                </h6>
+                                            )}
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </Accordion>

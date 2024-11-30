@@ -9,19 +9,26 @@ body {
 }
 
 @font-face {
-    font-family: OpenSans;
-    src: url("assets/OpenSans-Regular.ttf") format("truetype");
+    font-family: CousineNF;
+    src: url("assets/CousineNerdFont-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: CousineNF;
-    src: url("assets/CousineNerdFont-Regular.ttf") format("truetype");
+    font-family: ArimoNF;
+    src: url("assets/ArimoNerdFont-Regular.ttf") format("truetype");
 }
 
 .stackDiv {
     font-family: "CousineNF";
     margin-left: 7px;
     margin-right: 7px;
+}
+
+.projLink {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    display: inline;
 }
 
 .App {
@@ -110,7 +117,7 @@ body {
 }
 
 .blackText {
-    font-family: "OpenSans", sans-serif;
+    font-family: "ArimoNF", sans-serif;
     color: var(--text);
 }
 
@@ -209,10 +216,6 @@ body {
     width: 100%;
     height: auto;
     padding: 10%;
-}
-
-.homeHeading {
-    text-align: center;
 }
 
 .sidebarDiv {
