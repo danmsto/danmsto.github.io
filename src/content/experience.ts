@@ -5,6 +5,7 @@ const experience = [
     heading: "Software Developer",
     subtitle: "Laboratory instrumentation and software company",
     bulletPoints: [
+      "Launch new product developments using modern web technologies and interoperability with existing legacy products",
       "Using the .NET Framework to write and maintain laboratory inventory management systems for radiopharmaceutical applications",
       "Engaging with private and public sector clients to deploy bespoke software with client-specific features",
       "Complying with stringent regulatory standards and business logic",
