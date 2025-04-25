@@ -7,6 +7,7 @@ import HeadingConsoleDisplay from "./components/HeadingConsoleDisplay";
 import BadgeDisplay from "./components/BadgeDisplay";
 import { SVG, svgDealer } from "./content/svgDealer";
 import "./App.css";
+import CompetenciesDisplay from "./components/CompetenciesDisplay.tsx";
 
 function App() {
   const [theme, setTheme] = useState(1);
@@ -117,6 +118,7 @@ function App() {
             </Row>
           </Col>
           <Col md={4} sm={12} xs={12} className="blackText">
+            <CompetenciesDisplay />
             <ExperienceAccordion />
             <Row className="bodySection mt-2">
               <BadgeDisplay />
