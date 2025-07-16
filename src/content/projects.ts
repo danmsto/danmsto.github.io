@@ -11,10 +11,11 @@ import deskotechLogo from "./image/deskotechlogo.png";
 // import labLogicLogo from "./image/lablogiclogo.png";
 // import labLogicImage from "./image/lablogicimage.png";
 import duelsImage from "./image/duels.png";
-import wip from "./image/wipBackground.jpg";
-import duelsLogo from "./image/duelsLogo.png";
-import bHookLogo from "./image/bHookLogo.png";
-import thinklinkLogo from "./image/thinklinkLogo.png";
+// import wip from "./image/wipBackground.jpg";
+// import duelsLogo from "./image/duelsLogo.png";
+import roundRobinLogo from "./image/roundRobinLogo.png"
+// import bHookLogo from "./image/bHookLogo.png";
+// import thinklinkLogo from "./image/thinklinkLogo.png";
 import { Tech } from "./techDealer";
 
 const Status = {
@@ -26,13 +27,13 @@ const Status = {
 
 const projects = [
   {
-    title: "Duels",
-    description: "Full-stack web app remake of poolpool.",
+    title: "RoundRobin",
+    description: "Full-stack NextJS remake of poolpool.",
     madeWith: "Next.js TypeScript",
-    link: "https://duels-danmsto.vercel.app/",
+    link: "https://round-robin.vercel.app/",
     linkActive: false,
     image: duelsImage,
-    logo: duelsLogo,
+    logo: roundRobinLogo,
     status: Status.Active,
     stack: [
       Tech.TypeScript,
@@ -42,28 +43,28 @@ const projects = [
       Tech.PostgreSQL,
     ],
   },
-  {
-    title: "bHook",
-    description: "System-monitoring application using Avalonia.",
-    madeWith: "Avalonia/WPF",
-    link: "https://github.com/danmsto/bhook",
-    linkActive: false,
-    image: wip,
-    logo: bHookLogo,
-    status: Status.Active,
-    stack: [Tech.CSharp, Tech.DotNet],
-  },
-  {
-    title: "ThinkLink",
-    description: "Console application for file transfer over LAN.",
-    madeWith: "TBD",
-    link: "https://github.com/danmsto/thinklink",
-    linkActive: false,
-    image: wip,
-    logo: thinklinkLogo,
-    status: Status.Active,
-    stack: [Tech.CSharp, Tech.DotNet],
-  },
+  // {
+  //   title: "bHook",
+  //   description: "System-monitoring application using Avalonia.",
+  //   madeWith: "Avalonia/WPF",
+  //   link: "https://github.com/danmsto/bhook",
+  //   linkActive: false,
+  //   image: wip,
+  //   logo: bHookLogo,
+  //   status: Status.Active,
+  //   stack: [Tech.CSharp, Tech.DotNet],
+  // },
+  // {
+  //   title: "ThinkLink",
+  //   description: "Console application for file transfer over LAN.",
+  //   madeWith: "TBD",
+  //   link: "https://github.com/danmsto/thinklink",
+  //   linkActive: false,
+  //   image: wip,
+  //   logo: thinklinkLogo,
+  //   status: Status.Active,
+  //   stack: [Tech.CSharp, Tech.DotNet],
+  // },
   // {
   //     title: "LabLogic SPECTra",
   //     description: "SPECT radiopharmacy LIMS software.",
