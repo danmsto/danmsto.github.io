@@ -77,14 +77,14 @@ body {
 .carousel-caption {
   background-color: var(--foreground);
   color: var(--text);
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 5px;
 }
 
 .carousel-image {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
 .centered {
@@ -95,7 +95,8 @@ body {
 
 .bodySection {
   background-color: var(--foreground);
-  border-radius: 5px;
+  /*border-radius: 5px;*/
+  /*border-color: transparent !important;*/
   margin: 0 0 2vw;
 }
 
@@ -127,9 +128,18 @@ body {
   color: var(--text);
 }
 
+.card {
+  border: none;
+}
+
 .card-header,
 .status-card {
   background-color: var(--highlight);
+  border-bottom: none !important;
+}
+
+.card-header:first-child {
+  border: none;
 }
 
 .card-footer {
@@ -165,7 +175,7 @@ body {
   color: var(--text);
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -173,7 +183,7 @@ body {
 .linkCont {
   display: flex;
   flex-direction: row;
-  flex-wrap: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -264,15 +274,15 @@ body {
   outline: 0 !important;
 }
 
-.accordion,
-.accordion:active,
-.accordion-header,
-.accordion.collapse,
-.accordion-body,
-.accordion-button,
-.accordion-item {
-  border-color: var(--highlight);
-}
+/*.accordion,*/
+/*.accordion:active,*/
+/*.accordion-header,*/
+/*.accordion.collapse,*/
+/*.accordion-body,*/
+/*.accordion-button,*/
+/*.accordion-item {*/
+/*  border-color: var(--highlight);*/
+/*}*/
 
 .accordion-button,
 .accordion-button.collapsed,
