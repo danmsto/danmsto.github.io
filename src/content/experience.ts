@@ -13,7 +13,7 @@ const experience = [
     ],
     image: SVG.LabLogic,
     location: "LabLogic Systems Ltd",
-    dates: "2024 to date",
+    dates: "2024-date",
   },
   {
     heading: "Graduate Software Developer",
@@ -60,7 +60,7 @@ const experience = [
     ],
     image: SVG.Infineum,
     location: "Infineum UK Ltd",
-    dates: "2018 to 2022",
+    dates: "2018-2022",
   },
   {
     heading: "Chemistry Student",
@@ -71,7 +71,7 @@ const experience = [
     ],
     image: SVG.UofYork,
     location: "The University of York",
-    dates: "2014 to 2018",
+    dates: "2014-2018",
   },
 ];
 
