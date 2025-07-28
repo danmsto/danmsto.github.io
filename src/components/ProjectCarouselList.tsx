@@ -40,32 +40,30 @@ const ProjectCarouselList = () => {
                 <Accordion flush>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
-                      <Image src={p.logo} style={{ marginRight: "5px" }} />{" "}
+                      <Image src={p.logo} style={{ marginRight: "5px", }} />{" "}
                       {p.title}
                     </Accordion.Header>
-                    <Accordion.Body>
-                      <h3>
+                    <Accordion.Body className="stackDescBody">
+                      <h3 className="stackDivHeading">
                         {p.stack?.map((s: Tech) => (
-                          <span
-                            key={s}
-                            className="stackDiv"
-                            title={stackDealer[s].label}
-                          >
+                            <span
+                                key={s}
+                                className="stackDiv"
+                                title={stackDealer[s].label}
+                            >
                             {stackDealer[s].char}
                           </span>
                         ))}
                       </h3>
-                      {p.linkActive ? (
-                        <h6>
-                          <a href={p.link} target="_blank" className="projLink">
-                            {p.description} {`\uf08e`}
-                          </a>
-                        </h6>
-                      ) : (
-                        <h6>
-                          <span>{p.description}</span>
-                        </h6>
-                      )}
+                      <h6>
+                        {p.linkActive ? (
+                            <a href={p.link} target="_blank" className="projLink">
+                              {p.description} {`\uf08e`}
+                            </a>
+                        ) : (
+                            <span>{p.description}</span>
+                        )}
+                      </h6>
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
