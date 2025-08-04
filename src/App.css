@@ -95,8 +95,19 @@ body {
     font-family: ArimoNF, sans-serif;
 }
 
+.nav-link:hover {
+    filter: invert(0.5)
+}
+.nav-dropdown {
+    color: var()
+}
+
+.dropdown-item {
+    font-family: ArimoNF, sans-serif;
+}
+
 .fontIcon {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 .centered {
@@ -107,8 +118,6 @@ body {
 
 .bodySection {
   background-color: var(--foreground);
-  /*border-radius: 5px;*/
-  /*border-color: transparent !important;*/
   margin: 0 0 2vw;
 }
 
@@ -336,6 +345,14 @@ body {
   .stackDescBody {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .fontIcon {
+      margin-right: 10px;
+  }
+
+  .fontText {
+      display: none;
   }
 }
 

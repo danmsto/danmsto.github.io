@@ -62,16 +62,15 @@ function App() {
                             </Navbar.Brand>
                         </Col>
                         <Col className="navbarCol" xs="auto" sm="auto">
-                            <Nav.Link href="https://github.com/danmsto"
-                                      className="blackText"
-                            >
-                                <span className="fontIcon">{`\ue709`}</span> GitHub
+                            <Nav.Link href="https://github.com/danmsto">
+                                <span className="fontIcon">{`\ue709`}</span>
+                                <span className="fontText"> GitHub</span>
                             </Nav.Link>
                         </Col>
                         <Col className="navbarCol" xs="auto" sm="auto">
-                            <Nav.Link href="https://linkedin.com/in/danmsto"
-                                      className="blackText">
-                                <span className="fontIcon">{`\ue820`}</span> LinkedIn
+                            <Nav.Link href="https://linkedin.com/in/danmsto">
+                                <span className="fontIcon">{`\ue820`}</span>
+                                <span className="fontText"> LinkedIn</span>
                             </Nav.Link>
                         </Col>
                         <Col className="navbarCol" xs="auto" sm={0}>
@@ -83,13 +82,14 @@ function App() {
                                     drop="start"
                                 >
                                     <NavDropdown.Item onClick={() => setTheme(1)}>
-                                        🌑 Dark
+                                        <span>{`\uf522`}</span> Dark
                                     </NavDropdown.Item>
                                     <NavDropdown.Item onClick={() => setTheme(2)}>
-                                        ☀️ Light
+                                        <span
+                                            style={{color: theme === 1 ? "gold" : "GoldenRod"}}>{`\uf186`}</span> Light
                                     </NavDropdown.Item>
                                     <NavDropdown.Item onClick={() => setTheme(3)}>
-                                        🟩 Colourful
+                                        <span style={{color: "mediumseagreen"}}>{`\uf1fc`}</span> Colourful
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             </div>
@@ -114,7 +114,7 @@ function App() {
                         <CompetenciesDisplay/>
                         <span
                             className="centered blackText mt-2">Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript</span>
-                        <span className="centered blackText">with {techDealer[Tech.Bootstrap].char} Bootstrap components</span>
+                        <span className="centered blackText mb-2">with {techDealer[Tech.Bootstrap].char} Bootstrap components</span>
                     </Col>
                 </Row>
             </Container>
