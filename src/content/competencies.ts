@@ -1,20 +1,20 @@
-import {stackDealer, Tech} from "./techDealer";
+import {techDealer, Tech} from "./techDealer";
 
 const competencies = [
     {
-        icon: stackDealer[Tech.TypeScript],
+        icon: techDealer[Tech.TypeScript],
         label: "TypeScript (React and Node)",
     },
     {
-        icon: stackDealer[Tech.Java],
+        icon: techDealer[Tech.Java],
         label: "Java (Spring)",
     },
     {
-        icon: stackDealer[Tech.CSharp],
+        icon: techDealer[Tech.CSharp],
         label: "C# (.NET, ASP.NET, and Blazor)",
     },
     {
-        icon: stackDealer[Tech.SqlServer],
+        icon: techDealer[Tech.SqlServer],
         label: "SQL and NoSQL databases"
     }
 ];

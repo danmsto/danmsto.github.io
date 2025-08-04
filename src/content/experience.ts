@@ -1,4 +1,4 @@
-import { SVG } from "./svgDealer";
+import { Svg } from "./svgDealer";
 
 const experience = [
   {
@@ -11,7 +11,7 @@ const experience = [
       "Complying with stringent regulatory standards and business logic",
       "Refactoring legacy code and ensuring performance on older hardware",
     ],
-    image: SVG.LabLogic,
+    image: Svg.LabLogic,
     location: "LabLogic Systems Ltd",
     dates: "2024-date",
   },
@@ -25,7 +25,7 @@ const experience = [
       "Building B2B Service Automation Software",
       "Event-driven Architecture",
     ],
-    image: SVG.Ferrio,
+    image: Svg.Ferrio,
     location: "Ferrio Ltd",
     dates: "2023",
   },
@@ -43,7 +43,7 @@ const experience = [
       "Building a Text Adventure Game fully in Java",
       "Using relational and document-oriented databases to manage practice data for library loans and social media posts",
     ],
-    image: SVG.EyUp,
+    image: Svg.EyUp,
     location: "EyUp Skills Ltd",
     dates: "2022",
   },
@@ -58,7 +58,7 @@ const experience = [
       "Managing projects in Product Development, Test Problem Understanding and Solution, and Systems Improvement while managing stakeholder expectations and budgets up to £210,000",
       "Authoring two published Technical Reports",
     ],
-    image: SVG.Infineum,
+    image: Svg.Infineum,
     location: "Infineum UK Ltd",
     dates: "2018-2022",
   },
@@ -69,7 +69,7 @@ const experience = [
       "First-class degree awarded",
       "Master's Project in Synthetic Chemistry under Prof Peter O'Brien",
     ],
-    image: SVG.UofYork,
+    image: Svg.UofYork,
     location: "The University of York",
     dates: "2014-2018",
   },

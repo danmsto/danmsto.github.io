@@ -20,7 +20,7 @@ body {
 }
 
 .stackDiv {
-  font-family: "ArimoNF";
+    font-family: "ArimoNF", sans-serif;
   margin-left: 7px;
   margin-right: 7px;
 }
@@ -77,14 +77,26 @@ body {
 .carousel-caption {
   background-color: var(--foreground);
   color: var(--text);
-  /*border-radius: 5px;*/
+  border-radius: 5px;
   padding: 5px;
 }
 
 .carousel-image {
   height: 100%;
   width: 100%;
-  /*border-radius: 5px;*/
+  border-radius: 5px;
+}
+
+.badgeTitle {
+    background-color: var(--highlight);
+}
+
+.nav-link {
+    font-family: ArimoNF, sans-serif;
+}
+
+.fontIcon {
+    font-size: 1.1rem;
 }
 
 .centered {
@@ -274,15 +286,15 @@ body {
   outline: 0 !important;
 }
 
-/*.accordion,*/
-/*.accordion:active,*/
-/*.accordion-header,*/
-/*.accordion.collapse,*/
-/*.accordion-body,*/
-/*.accordion-button,*/
-/*.accordion-item {*/
-/*  border-color: var(--highlight);*/
-/*}*/
+.accordion,
+.accordion:active,
+.accordion-header,
+.accordion.collapse,
+.accordion-body,
+.accordion-button,
+.accordion-item {
+  border-color: var(--highlight);
+}
 
 .accordion-button,
 .accordion-button.collapsed,
@@ -339,7 +351,7 @@ body {
   }
 
   .navbar {
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0;
   }
 }
