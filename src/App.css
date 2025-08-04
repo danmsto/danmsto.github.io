@@ -20,7 +20,7 @@ body {
 }
 
 .stackDiv {
-  font-family: "ArimoNF";
+    font-family: "ArimoNF", sans-serif;
   margin-left: 7px;
   margin-right: 7px;
 }
@@ -87,6 +87,29 @@ body {
   border-radius: 5px;
 }
 
+.badgeTitle {
+    background-color: var(--highlight);
+}
+
+.nav-link {
+    font-family: ArimoNF, sans-serif;
+}
+
+.nav-link:hover {
+    filter: invert(0.5)
+}
+.nav-dropdown {
+    color: var()
+}
+
+.dropdown-item {
+    font-family: ArimoNF, sans-serif;
+}
+
+.fontIcon {
+    font-size: 1.15rem;
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -95,7 +118,6 @@ body {
 
 .bodySection {
   background-color: var(--foreground);
-  border-radius: 5px;
   margin: 0 0 2vw;
 }
 
@@ -127,9 +149,18 @@ body {
   color: var(--text);
 }
 
+.card {
+  border: none;
+}
+
 .card-header,
 .status-card {
   background-color: var(--highlight);
+  border-bottom: none !important;
+}
+
+.card-header:first-child {
+  border: none;
 }
 
 .card-footer {
@@ -165,7 +196,7 @@ body {
   color: var(--text);
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -173,7 +204,7 @@ body {
 .linkCont {
   display: flex;
   flex-direction: row;
-  flex-wrap: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -315,6 +346,14 @@ body {
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  .fontIcon {
+      margin-right: 10px;
+  }
+
+  .fontText {
+      display: none;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -329,7 +368,7 @@ body {
   }
 
   .navbar {
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0;
   }
 }

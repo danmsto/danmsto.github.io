@@ -1,6 +1,6 @@
 import { Accordion, Carousel, Container, Image } from "react-bootstrap";
 import projects from "../content/projects.js";
-import { Tech, stackDealer } from "../content/techDealer.js";
+import { Tech, techDealer } from "../content/techDealer.js";
 
 const ProjectCarouselList = () => {
   return (
@@ -49,9 +49,9 @@ const ProjectCarouselList = () => {
                             <span
                                 key={s}
                                 className="stackDiv"
-                                title={stackDealer[s].label}
+                                title={techDealer[s].label}
                             >
-                            {stackDealer[s].char}
+                            {techDealer[s].char}
                           </span>
                         ))}
                       </h3>
