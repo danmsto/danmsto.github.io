@@ -206,6 +206,11 @@ body {
     .fontText {
         display: none;
     }
+
+    .accordion-body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 991px) {
