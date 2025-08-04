@@ -57,7 +57,7 @@ function App() {
                 <Container>
                     <Row style={{flexGrow: 1}}>
                         <Col xs={0} sm={0}>
-                            <Navbar.Brand className="brandText">
+                            <Navbar.Brand className="monospaceText">
                                 {"DS> Dan Stoddart"}
                             </Navbar.Brand>
                         </Col>
@@ -99,22 +99,22 @@ function App() {
             </Navbar>
             <Container>
                 <Row>
-                    <Col md={8} sm={12} xs={12} className="headerText">
+                    <Col md={8} sm={12} xs={12} className="monospaceText mb-3">
                         <HeadingConsoleDisplay/>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={8} sm={12} xs={12}>
-                        <Row className="blackText">
+                        <Row>
                             <ProjectCarouselList/>
                         </Row>
                     </Col>
-                    <Col md={4} sm={12} xs={12} className="blackText">
+                    <Col md={4} sm={12} xs={12}>
                         <ExperienceAccordion/>
                         <CompetenciesDisplay/>
                         <span
-                            className="centered blackText mt-2">Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript</span>
-                        <span className="centered blackText mb-2">with {techDealer[Tech.Bootstrap].char} Bootstrap components</span>
+                            className="centered mt-2">Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript</span>
+                        <span className="centered mb-2">with {techDealer[Tech.Bootstrap].char} Bootstrap components</span>
                     </Col>
                 </Row>
             </Container>

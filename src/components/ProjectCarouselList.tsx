@@ -1,4 +1,4 @@
-import { Accordion, Carousel, Container, Image } from "react-bootstrap";
+import {Accordion, Carousel, Container, Image} from "react-bootstrap";
 import projects from "../content/projects.js";
 import { Tech, techDealer } from "../content/techDealer.js";
 
@@ -43,7 +43,7 @@ const ProjectCarouselList = () => {
                       <Image src={p.logo} style={{ marginRight: "5px", }} />{" "}
                       {p.title}
                     </Accordion.Header>
-                    <Accordion.Body className="stackDescBody">
+                    <Accordion.Body>
                       <h3 className="stackDivHeading">
                         {p.stack?.map((s: Tech) => (
                             <span
@@ -51,13 +51,13 @@ const ProjectCarouselList = () => {
                                 className="stackDiv"
                                 title={techDealer[s].label}
                             >
-                            {techDealer[s].char}
+                                <span className="stackDivIcon"> {techDealer[s].char}</span>{techDealer[s].label}
                           </span>
                         ))}
                       </h3>
                       <h6>
                         {p.linkActive ? (
-                            <a href={p.link} target="_blank" className="projLink">
+                            <a href={p.link} target="_blank" className="projectLinkText">
                               {p.description} {`\uf08e`}
                             </a>
                         ) : (

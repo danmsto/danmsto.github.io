@@ -12,16 +12,16 @@ const ExperienceAccordion = () => {
                             <Accordion.Header>
                                 <Container>
                                     <Row>
-                                        <Col xs={2}>
+                                        <Col xs={5} md={2}>
                                             <img
-                                                className="badgeBrightness"
+                                                className="svgBadge"
                                                 src={svgDealer[e.image]}
                                                 alt={e.heading}
                                                 height={48}
                                                 width={48}
                                             />
                                         </Col>
-                                        <Col xs={7} style={{alignContent: "center"}}>
+                                        <Col xs={4} md={7} style={{alignContent: "center"}}>
                                             {e.location}
                                         </Col>
                                         <Col xs={3} style={{alignContent: "center", fontSize: "small"}}>
@@ -37,7 +37,7 @@ const ExperienceAccordion = () => {
                                 <ul>
                                     {e.bulletPoints.map((bulletPoint) => {
                                         return (
-                                            <li className="experienceBulletPoints" key={bulletPoint}>
+                                            <li style={{padding: 0}} key={bulletPoint}>
                                                 {bulletPoint}
                                             </li>
                                         );
