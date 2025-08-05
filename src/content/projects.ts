@@ -17,7 +17,7 @@ const Status = {
 
 const projects = [
   {
-    title: "Duels",
+    title: "RoundRobin",
     description: "Full-stack NextJS remake of poolpool.",
     madeWith: "Next.js TypeScript",
     link: "https://round-robin.vercel.app/",
