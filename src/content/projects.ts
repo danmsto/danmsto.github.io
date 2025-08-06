@@ -21,7 +21,7 @@ const projects = [
     description: "Full-stack NextJS remake of poolpool.",
     madeWith: "Next.js TypeScript",
     link: "https://roundrobin-danmsto.vercel.app/",
-    linkActive: false,
+    linkActive: true,
     image: roundRobinImage,
     logo: roundRobinLogo,
     status: Status.Active,
