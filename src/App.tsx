@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {useEffect, useState} from "react";
 import ProjectCarouselList from "./components/ProjectCarouselList";
 import ExperienceAccordion from "./components/ExperienceAccordion";
-import HeadingConsoleDisplay from "./components/HeadingConsoleDisplay";
+import HeaderConsole from "./components/HeadingConsoleDisplay";
 import "./App.css";
 import CompetenciesDisplay from "./components/CompetenciesDisplay.tsx";
 import {techDealer, Tech} from "./content/techDealer.ts";
@@ -12,7 +12,7 @@ function App() {
     const [theme, setTheme] = useState(1);
 
     useEffect(() => {
-        var b = document.querySelector("body");
+        var b: HTMLElement | null = document.querySelector("body");
         if (b === null) return;
         switch (theme) {
             default:
@@ -100,7 +100,7 @@ function App() {
             <Container>
                 <Row>
                     <Col md={8} sm={12} xs={12} className="monospaceText mb-3">
-                        <HeadingConsoleDisplay/>
+                        <HeaderConsole/>
                     </Col>
                 </Row>
                 <Row>

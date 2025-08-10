@@ -9,13 +9,9 @@ import deskotechLogo from "./image/deskotechlogo.png";
 import roundRobinImage from "./image/roundRobin.png";
 import roundRobinLogo from "./image/roundRobinLogo.png"
 import { Tech } from "./techDealer";
+import { Project } from  "../types.ts"
 
-const Status = {
-  Archived: "Archived",
-  Active: "Active",
-};
-
-const projects = [
+const projects: Project[] = [
   {
     title: "RoundRobin",
     description: "Full-stack NextJS remake of poolpool.",
@@ -24,7 +20,7 @@ const projects = [
     linkActive: true,
     image: roundRobinImage,
     logo: roundRobinLogo,
-    status: Status.Active,
+    active: true,
     stack: [
       Tech.TypeScript,
       Tech.NodeJS,
@@ -41,7 +37,7 @@ const projects = [
     linkActive: true,
     image: deskotechImage,
     logo: deskotechLogo,
-    status: Status.Archived,
+    active: false,
     stack: [
       Tech.Java,
       Tech.Spring,
@@ -60,7 +56,7 @@ const projects = [
     linkActive: true,
     image: pizzaImage,
     logo: pizzaLogo,
-    status: Status.Archived,
+    active: false,
     stack: [Tech.JavaScript, Tech.NodeJS, Tech.React],
   },
   {
@@ -71,7 +67,7 @@ const projects = [
     linkActive: true,
     image: gameImage,
     logo: gameLogo,
-    status: Status.Archived,
+    active: false,
     stack: [Tech.Java],
   },
   {
@@ -82,7 +78,7 @@ const projects = [
     linkActive: true,
     image: poolPoolImage,
     logo: poolPoolLogo,
-    status: Status.Archived,
+    active: false,
     stack: [Tech.JavaScript, Tech.HTML, Tech.CSS],
   },
 ];

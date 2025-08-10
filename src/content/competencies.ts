@@ -1,6 +1,7 @@
-import {techDealer, Tech} from "./techDealer";
+import { Competency } from "../types";
+import { techDealer, Tech } from "./techDealer";
 
-const competencies = [
+const competencies: Competency[] = [
     {
         icon: techDealer[Tech.TypeScript],
         label: "TypeScript (React and Node)",

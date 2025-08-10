@@ -1,29 +1,15 @@
 import {Accordion, Carousel, Container, Image} from "react-bootstrap";
 import projects from "../content/projects.js";
 import { Tech, techDealer } from "../content/techDealer.js";
+import { Project } from "../types.js";
 
 const ProjectCarouselList = () => {
   return (
     <Container className="p-0">
-      {projects.map((p) => (
+      {projects.map((p: Project) => (
         <div>
-          <span
-            className="status-card"
-            style={{
-              borderTopLeftRadius: "5px",
-              borderBottomRightRadius: "5px",
-              height: "40px",
-              width: "90px",
-              position: "absolute",
-              zIndex: 400,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              fontSize: 13,
-              wordWrap: "normal",
-            }}
-          >
-            {p.status}
+          <span className="card-header status-card">
+            {p.active ? "Active" : "Archived"}
           </span>
           <Carousel
             variant="light"

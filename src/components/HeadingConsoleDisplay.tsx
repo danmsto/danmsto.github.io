@@ -1,20 +1,20 @@
 import { useEffect } from "react";
 import introduction from "../content/introduction";
 
-const HeadingConsoleDisplay = () => {
+const HeaderConsole = () => {
   useEffect(() => {
-    const b = document.querySelector("body");
+    const b: HTMLBodyElement | null = document.querySelector("body");
     if (!b) return;
 
-    const bs = getComputedStyle(b);
+    const bs: CSSStyleDeclaration = getComputedStyle(b);
 
     const fadeEffect = () => {
-      let i = 0;
-      const change = () => {
-        const doc = document.getElementById("consoleEffect");
+      let i: number = 0;
+      const change = (): void => {
+        const doc: HTMLElement | null = document.getElementById("consoleEffect");
         if (!doc) return;
 
-        const color = [
+        const color: string[] = [
           bs.getPropertyValue("--background"),
           bs.getPropertyValue("--text"),
         ];
@@ -30,16 +30,15 @@ const HeadingConsoleDisplay = () => {
 
   return (
     <div>
-      {"DS> " + introduction.points.uni}
-      <br />
-      {"DS> " + introduction.points.rnd}
-      <br />
-      {"DS> " + introduction.points.cod}
-      <br />
-      {"DS> " + introduction.points.dev1}
+      {introduction.lines.map((line: string, index: number, array: string[]) => (
+        <>
+          {"DS> " + line}
+          {index !== array.length - 1 && <br />}
+        </>
+      ))}
       <span id="consoleEffect">█</span>
     </div>
   );
 };
 
-export default HeadingConsoleDisplay;
+export default HeaderConsole;

@@ -1,8 +1,25 @@
 import { Svg } from "./svgDealer";
+import { Experience } from "../types.ts"
 
-const experience = [
+const Title = {
+  LabLogic: "Software Developer",
+  Ferrio: "Graduate Developer",
+  EyUp: "Full Stack Software Development Student",
+  Infineum: "Industrial R&D Chemist",
+  York: "Chemistry Student",
+}
+
+const Location = {
+  LabLogic: "LabLogic Systems Ltd",
+  Ferrio: "Ferrio Ltd",
+  EyUp: "EyUp Skills Ltd",
+  Infineum: "Infineum UK Ltd",
+  York: "University of York",
+}
+
+const experience: Experience[] = [
   {
-    heading: "Software Developer",
+    heading: Title.LabLogic,
     subtitle: "Laboratory instrumentation and software company",
     bulletPoints: [
       "Launch new product developments using modern web technologies and interoperability with existing legacy products",
@@ -12,11 +29,11 @@ const experience = [
       "Refactoring legacy code and ensuring performance on older hardware",
     ],
     image: Svg.LabLogic,
-    location: "LabLogic Systems Ltd",
+    location: Location.LabLogic,
     dates: "2024-date",
   },
   {
-    heading: "Graduate Software Developer",
+    heading: Title.Ferrio,
     subtitle: "Low Code Automation consultancy and software company",
     bulletPoints: [
       "Writing production code for the front-end codebase with CI/CD practices",
@@ -26,11 +43,11 @@ const experience = [
       "Event-driven Architecture",
     ],
     image: Svg.Ferrio,
-    location: "Ferrio Ltd",
+    location: Location.Ferrio,
     dates: "2023",
   },
   {
-    heading: "Full Stack Software Development Student",
+    heading: Title.EyUp,
     subtitle:
       "Software Development bootcamp launched by Sheffield-based firm WANdisco",
     bulletPoints: [
@@ -44,11 +61,11 @@ const experience = [
       "Using relational and document-oriented databases to manage practice data for library loans and social media posts",
     ],
     image: Svg.EyUp,
-    location: "EyUp Skills Ltd",
+    location: Location.EyUp,
     dates: "2022",
   },
   {
-    heading: "Industrial R&D Chemist",
+    heading: Title.Infineum,
     subtitle:
       "World-leading Engine Oil Additives and Specialty Chemicals company",
     bulletPoints: [
@@ -59,18 +76,18 @@ const experience = [
       "Authoring two published Technical Reports",
     ],
     image: Svg.Infineum,
-    location: "Infineum UK Ltd",
+    location: Location.Infineum,
     dates: "2018-2022",
   },
   {
-    heading: "Chemistry Student",
+    heading: Title.York,
     subtitle: "MChem in Chemistry",
     bulletPoints: [
       "First-class degree awarded",
       "Master's Project in Synthetic Chemistry under Prof Peter O'Brien",
     ],
     image: Svg.UofYork,
-    location: "The University of York",
+    location: Location.York,
     dates: "2014-2018",
   },
 ];

@@ -1,3 +1,5 @@
+import { TechDetails } from "../types.ts"
+
 export enum Tech {
   // Languages
   Java,
@@ -24,7 +26,7 @@ export enum Tech {
   PostgreSQL,
 }
 
-export const techDealer = {
+export const techDealer: TechDetails = {
   [Tech.Java]: { label: "Java", char: `\ue738` },
   [Tech.JavaScript]: { label: "JavaScript", char: `\ue781` },
   [Tech.TypeScript]: { label: "TypeScript", char: `\ue8ca` },
