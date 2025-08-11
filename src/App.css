@@ -175,9 +175,13 @@ body {
 .accordion:active,
 .accordion-header,
 .accordion.collapse,
-.accordion-body,
+.accordion-body {
+    border-color: var(--highlight);
+}
+
 .accordion-item {
     border-color: var(--highlight);
+    background-color: transparent;
 }
 
 .accordion-button,
