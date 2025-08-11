@@ -1,5 +1,4 @@
-import { Svg } from "./content/svgDealer.ts"
-import { Tech } from "./content/techDealer.ts"
+import { Svg, Tech } from "./enums.ts";
 
 export type Project = {
     title: string;
