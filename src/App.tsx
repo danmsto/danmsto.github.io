@@ -1,12 +1,12 @@
-import {Col, Container, Nav, Navbar, NavDropdown, Row} from "react-bootstrap";
+import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import ProjectCarouselList from "./components/ProjectCarouselList";
 import ExperienceAccordion from "./components/ExperienceAccordion";
 import HeaderConsole from "./components/HeadingConsoleDisplay";
 import "./App.css";
 import CompetenciesDisplay from "./components/CompetenciesDisplay.tsx";
-import {techDealer, Tech} from "./content/techDealer.ts";
+import { techDealer, Tech } from "./content/techDealer.ts";
 
 function App() {
     const [theme, setTheme] = useState(1);
@@ -55,7 +55,7 @@ function App() {
                 variant={theme === 1 ? "dark" : undefined}
             >
                 <Container>
-                    <Row style={{flexGrow: 1}}>
+                    <Row style={{ flexGrow: 1 }}>
                         <Col xs={0} sm={0}>
                             <Navbar.Brand className="monospaceText">
                                 {"DS> Dan Stoddart"}
@@ -74,7 +74,7 @@ function App() {
                             </Nav.Link>
                         </Col>
                         <Col className="navbarCol" xs="auto" sm={0}>
-                            <div style={{display: "flex", flexDirection: "row-reverse"}}>
+                            <div style={{ display: "flex", flexDirection: "row-reverse" }}>
                                 <NavDropdown
                                     align="end"
                                     title={<span className={"fontIcon"}>{`\ueb2a`}</span>}
@@ -86,10 +86,10 @@ function App() {
                                     </NavDropdown.Item>
                                     <NavDropdown.Item onClick={() => setTheme(2)}>
                                         <span
-                                            style={{color: theme === 1 ? "gold" : "GoldenRod"}}>{`\uf186`}</span> Light
+                                            style={{ color: theme === 1 ? "gold" : "GoldenRod" }}>{`\uf186`}</span> Light
                                     </NavDropdown.Item>
                                     <NavDropdown.Item onClick={() => setTheme(3)}>
-                                        <span style={{color: "mediumseagreen"}}>{`\uf1fc`}</span> Colourful
+                                        <span style={{ color: "mediumseagreen" }}>{`\uf1fc`}</span> Colourful
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             </div>
@@ -100,18 +100,18 @@ function App() {
             <Container>
                 <Row>
                     <Col md={8} sm={12} xs={12} className="monospaceText mb-3">
-                        <HeaderConsole/>
+                        <HeaderConsole />
                     </Col>
                 </Row>
                 <Row>
                     <Col md={8} sm={12} xs={12}>
                         <Row>
-                            <ProjectCarouselList/>
+                            <ProjectCarouselList />
                         </Row>
                     </Col>
                     <Col md={4} sm={12} xs={12}>
-                        <ExperienceAccordion/>
-                        <CompetenciesDisplay/>
+                        <ExperienceAccordion />
+                        <CompetenciesDisplay />
                         <span
                             className="centered mt-2">Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript</span>
                         <span className="centered mb-2">with {techDealer[Tech.Bootstrap].char} Bootstrap components</span>

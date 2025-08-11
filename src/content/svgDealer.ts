@@ -6,17 +6,17 @@ import scanner from "./svg/lablogic.svg";
 import { SvgDetails } from "../types";
 
 export enum Svg {
-  Ferrio,
-  EyUp,
-  Infineum,
-  UofYork,
-  LabLogic,
+    Ferrio,
+    EyUp,
+    Infineum,
+    UofYork,
+    LabLogic,
 }
 
 export const svgDealer: SvgDetails = {
-  [Svg.Ferrio]: cog,
-  [Svg.EyUp]: console,
-  [Svg.Infineum]: can,
-  [Svg.UofYork]: flask,
-  [Svg.LabLogic]: scanner,
+    [Svg.Ferrio]: cog,
+    [Svg.EyUp]: console,
+    [Svg.Infineum]: can,
+    [Svg.UofYork]: flask,
+    [Svg.LabLogic]: scanner,
 };
