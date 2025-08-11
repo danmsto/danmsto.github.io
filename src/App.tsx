@@ -1,11 +1,11 @@
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import ProjectList from "./components/ProjectList";
-import ExperienceAccordion from "./components/ExperienceAccordion";
-import HeaderConsole from "./components/HeaderConsole";
+import ProjectList from "./component/ProjectList";
+import ExperienceAccordion from "./component/ExperienceAccordion";
+import HeaderConsole from "./component/HeaderConsole";
 import "./App.css";
-import CompentencyList from "./components/CompetencyList";
+import CompentencyList from "./component/CompetencyList";
 import { Tech } from "./core/enums.ts";
 import { techDealer } from "./core/dealers.ts";
 
