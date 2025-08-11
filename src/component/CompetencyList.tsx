@@ -1,4 +1,4 @@
-import {Card, CardHeader, ListGroup} from "react-bootstrap";
+import { Card, CardHeader, ListGroup } from "react-bootstrap";
 import competencies from "../content/competencies.ts";
 
 const CompetenciesDisplay = () => {
@@ -7,7 +7,9 @@ const CompetenciesDisplay = () => {
             <CardHeader>Competencies</CardHeader>
             <ListGroup className="bodySection mb-0 bodySection">
                 {competencies.map(c => (
-                    <ListGroup.Item className="competenciesItem blackText">{c.icon.char} {c.label}</ListGroup.Item>
+                    <ListGroup.Item className="competenciesItem blackText">
+                        {c.icon.char} {c.label}
+                    </ListGroup.Item>
                 ))}
             </ListGroup>
         </Card>

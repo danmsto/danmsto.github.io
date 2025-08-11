@@ -6,24 +6,26 @@
     --buttoninteract: "#202d36";
     --badge-invert-value: "1";
     --accordion-button-after: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e\")";
+    --bs-body-color: var(--text);
+    --bs-primary-text-emphasis: var(--text);
+    --bs-navbar-brand-color: var(--text);
+    --bs-navbar-brand-hover-color: var(--text);
 }
 
 body {
     background: var(--background);
     font-family: ArimoNF, sans-serif;
     color: var(--text);
-    --bs-body-color: var(--text);
-    --bs-primary-text-emphasis: var(--text);
 }
 
 @font-face {
     font-family: CousineNF;
-    src: url("assets/CousineNerdFont-Regular.ttf") format("truetype");
+    src: url("asset/font/CousineNerdFont-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: ArimoNF;
-    src: url("assets/ArimoNerdFont-Regular.ttf") format("truetype");
+    src: url("asset/font/ArimoNerdFont-Regular.ttf") format("truetype");
 }
 
 .stackDiv {
@@ -93,10 +95,23 @@ body {
     border: none;
 }
 
-.card-header,
-.status-card {
+.card-header {
     background-color: var(--highlight);
     border-bottom: none !important;
+}
+
+.status-card {
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 40px;
+    width: 90px;
+    position: absolute;
+    z-index: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13;
+    word-wrap: normal;
 }
 
 .card-header:first-child {
@@ -160,9 +175,13 @@ body {
 .accordion:active,
 .accordion-header,
 .accordion.collapse,
-.accordion-body,
+.accordion-body {
+    border-color: var(--highlight);
+}
+
 .accordion-item {
     border-color: var(--highlight);
+    background-color: transparent;
 }
 
 .accordion-button,
@@ -188,6 +207,7 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+
     .navbar-brand,
     .navbarCol {
         padding-right: 0;

@@ -1,6 +1,6 @@
-import {Accordion, Col, Container, Row} from "react-bootstrap";
+import { Accordion, Col, Container, Row } from "react-bootstrap";
 import experience from "../content/experience";
-import {svgDealer} from "../content/svgDealer";
+import { svgDealer } from "../util/dealers.ts";
 
 const ExperienceAccordion = () => {
     return (
@@ -21,10 +21,10 @@ const ExperienceAccordion = () => {
                                                 width={48}
                                             />
                                         </Col>
-                                        <Col xs={4} md={7} style={{alignContent: "center"}}>
+                                        <Col xs={4} md={7} style={{ alignContent: "center" }}>
                                             {e.location}
                                         </Col>
-                                        <Col xs={3} style={{alignContent: "center", fontSize: "small"}}>
+                                        <Col xs={3} style={{ alignContent: "center", fontSize: "small" }}>
                                             {e.dates}
                                         </Col>
                                     </Row>
@@ -32,12 +32,12 @@ const ExperienceAccordion = () => {
                             </Accordion.Header>
                             <Accordion.Body>
                                 <strong>{e.heading}</strong>
-                                <br/>
+                                <br />
                                 <span>{e.subtitle}</span>
                                 <ul>
                                     {e.bulletPoints.map((bulletPoint) => {
                                         return (
-                                            <li style={{padding: 0}} key={bulletPoint}>
+                                            <li style={{ padding: 0 }} key={bulletPoint}>
                                                 {bulletPoint}
                                             </li>
                                         );

@@ -1,6 +1,8 @@
-import {techDealer, Tech} from "./techDealer";
+import { Competency } from "../util/types.ts";
+import { Tech } from "../util/enums.ts";
+import { techDealer } from "../util/dealers.ts";
 
-const competencies = [
+const competencies: Competency[] = [
     {
         icon: techDealer[Tech.TypeScript],
         label: "TypeScript (React and Node)",
