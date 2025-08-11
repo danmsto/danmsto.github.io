@@ -1,15 +1,15 @@
-import poolPoolImage from "./image/poolpool.png";
-import poolPoolLogo from "./image/poolpoollogo.png";
-import pizzaImage from "./image/doughjoe.png";
-import pizzaLogo from "./image/doughjoepizzalogo.png";
-import gameImage from "./image/sweetrelease.png";
-import gameLogo from "./image/sweetreleaselogo.png";
-import deskotechImage from "./image/deskotech.png";
-import deskotechLogo from "./image/deskotechlogo.png";
-import roundRobinImage from "./image/roundRobin.png";
-import roundRobinLogo from "./image/roundRobinLogo.png"
-import { Tech } from "./techDealer";
-import { Project } from "../types.ts"
+import poolPoolImage from "../asset/image/poolpool.png";
+import poolPoolLogo from "../asset/image/poolpoollogo.png";
+import pizzaImage from "../asset/image/doughjoe.png";
+import pizzaLogo from "../asset/image/doughjoepizzalogo.png";
+import gameImage from "../asset/image/sweetrelease.png";
+import gameLogo from "../asset/image/sweetreleaselogo.png";
+import deskotechImage from "../asset/image/deskotech.png";
+import deskotechLogo from "../asset/image/deskotechlogo.png";
+import roundRobinImage from "../asset/image/roundRobin.png";
+import roundRobinLogo from "../asset/image/roundRobinLogo.png"
+import { Tech } from "../core/enums.ts";
+import { Project } from "../core/types.ts"
 
 const projects: Project[] = [
     {

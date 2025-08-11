@@ -1,4 +1,4 @@
-import { Introduction } from "../types";
+import { Introduction } from "../core/types.ts";
 
 const introduction: Introduction = {
     header: "Daniel Stoddart",

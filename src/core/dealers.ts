@@ -1,30 +1,18 @@
-import { TechDetails } from "../types.ts"
+import cog from "../asset/svg/ferrio.svg";
+import console from "../asset/svg/eyup.svg";
+import can from "../asset/svg/infineum.svg";
+import flask from "../asset/svg/mchem.svg";
+import scanner from "../asset/svg/lablogic.svg";
+import { Svg, Tech } from "./enums.ts";
+import { SvgDetails, TechDetails } from "./types.ts";
 
-export enum Tech {
-    // Languages
-    Java,
-    JavaScript,
-    TypeScript,
-    CSharp,
-    // Frameworks/Libraries
-    Spring,
-    DotNet,
-    Blazor,
-    NodeJS,
-    React,
-    NextJS,
-    HTML,
-    CSS,
-    Sass,
-    Bootstrap,
-    Tailwind,
-    // Databases
-    MongoDB,
-    MySQL,
-    CosmosDB,
-    SqlServer,
-    PostgreSQL,
-}
+export const svgDealer: SvgDetails = {
+    [Svg.Ferrio]: cog,
+    [Svg.EyUp]: console,
+    [Svg.Infineum]: can,
+    [Svg.UofYork]: flask,
+    [Svg.LabLogic]: scanner,
+};
 
 export const techDealer: TechDetails = {
     [Tech.Java]: { label: "Java", char: `\ue738` },

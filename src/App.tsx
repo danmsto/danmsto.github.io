@@ -1,16 +1,17 @@
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import ProjectCarouselList from "./components/ProjectCarouselList";
+import ProjectList from "./components/ProjectList";
 import ExperienceAccordion from "./components/ExperienceAccordion";
-import HeaderConsole from "./components/HeadingConsoleDisplay";
+import HeaderConsole from "./components/HeaderConsole";
 import "./App.css";
-import CompetenciesDisplay from "./components/CompetenciesDisplay.tsx";
-import { techDealer, Tech } from "./content/techDealer.ts";
+import CompentencyList from "./components/CompetencyList";
+import { Tech } from "./core/enums.ts";
+import { techDealer } from "./core/dealers.ts";
 
 function App() {
     const [theme, setTheme] = useState(1);
-
+    
     useEffect(() => {
         var b: HTMLElement | null = document.querySelector("body");
         if (b === null) return;
@@ -106,12 +107,12 @@ function App() {
                 <Row>
                     <Col md={8} sm={12} xs={12}>
                         <Row>
-                            <ProjectCarouselList />
+                            <ProjectList />
                         </Row>
                     </Col>
                     <Col md={4} sm={12} xs={12}>
                         <ExperienceAccordion />
-                        <CompetenciesDisplay />
+                        <CompentencyList />
                         <span
                             className="centered mt-2">Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript</span>
                         <span className="centered mb-2">with {techDealer[Tech.Bootstrap].char} Bootstrap components</span>

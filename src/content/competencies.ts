@@ -1,5 +1,6 @@
-import { Competency } from "../types";
-import { techDealer, Tech } from "./techDealer";
+import { Competency } from "../core/types.ts";
+import { Tech } from "../core/enums.ts";
+import { techDealer } from "../core/dealers.ts";
 
 const competencies: Competency[] = [
     {

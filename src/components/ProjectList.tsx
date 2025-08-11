@@ -1,9 +1,10 @@
 import { Accordion, Carousel, Container, Image } from "react-bootstrap";
 import projects from "../content/projects.js";
-import { Tech, techDealer } from "../content/techDealer.js";
-import { Project } from "../types.js";
+import { Tech } from "../core/enums.ts";
+import { techDealer } from "../core/dealers.ts";
+import { Project } from "../core/types.ts";
 
-const ProjectCarouselList = () => {
+const ProjectList = () => {
     return (
         <Container className="p-0">
             {projects.map((p: Project) => (
@@ -62,4 +63,4 @@ const ProjectCarouselList = () => {
     );
 };
 
-export default ProjectCarouselList;
+export default ProjectList;
