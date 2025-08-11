@@ -21,7 +21,7 @@ export type Experience = {
     dates: string;
 }
 
-export type TechDetail = {
+type TechDetail = {
     label: string;
     char: string;
 } 

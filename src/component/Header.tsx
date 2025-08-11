@@ -10,7 +10,7 @@ const Header = () => {
 			sticky="top"
 			expand="lg"
 			className="navbar"
-			variant={theme === 1 ? "dark" : "undefined" }
+			variant={theme === 1 ? "dark" : "undefined"}
 		>
 			<Container>
 				<Row style={{ flexGrow: 1 }}>
