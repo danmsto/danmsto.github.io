@@ -1,8 +1,8 @@
 import { Accordion, Carousel, Container, Image } from "react-bootstrap";
 import projects from "../content/projects.js";
-import { Tech } from "../core/enums.ts";
-import { techDealer } from "../core/dealers.ts";
-import { Project } from "../core/types.ts";
+import { Tech } from "../util/enums.ts";
+import { techDealer } from "../util/dealers.ts";
+import { Project } from "../util/types.ts";
 
 const ProjectList = () => {
     return (

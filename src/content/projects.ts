@@ -8,8 +8,8 @@ import deskotechImage from "../asset/image/deskotech.png";
 import deskotechLogo from "../asset/image/deskotechlogo.png";
 import roundRobinImage from "../asset/image/roundRobin.png";
 import roundRobinLogo from "../asset/image/roundRobinLogo.png"
-import { Tech } from "../core/enums.ts";
-import { Project } from "../core/types.ts"
+import { Tech } from "../util/enums.ts";
+import { Project } from "../util/types.ts"
 
 const projects: Project[] = [
     {

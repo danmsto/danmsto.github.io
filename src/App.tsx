@@ -6,8 +6,8 @@ import ExperienceAccordion from "./component/ExperienceAccordion";
 import HeaderConsole from "./component/HeaderConsole";
 import "./App.css";
 import CompentencyList from "./component/CompetencyList";
-import { Tech } from "./core/enums.ts";
-import { techDealer } from "./core/dealers.ts";
+import { Tech } from "./util/enums.ts";
+import { techDealer } from "./util/dealers.ts";
 
 function App() {
     const [theme, setTheme] = useState(1);

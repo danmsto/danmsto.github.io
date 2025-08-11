@@ -1,6 +1,6 @@
 import { Accordion, Col, Container, Row } from "react-bootstrap";
 import experience from "../content/experience";
-import { svgDealer } from "../core/dealers.ts";
+import { svgDealer } from "../util/dealers.ts";
 
 const ExperienceAccordion = () => {
     return (

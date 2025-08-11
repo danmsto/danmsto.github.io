@@ -1,5 +1,5 @@
-import { Svg } from "../core/enums.ts";
-import { Experience } from "../core/types.ts"
+import { Svg } from "../util/enums.ts";
+import { Experience } from "../util/types.ts"
 
 const Title = {
     LabLogic: "Software Developer",
