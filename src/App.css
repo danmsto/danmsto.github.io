@@ -28,6 +28,16 @@ body {
     src: url("asset/font/ArimoNerdFont-Regular.ttf") format("truetype");
 }
 
+
+@font-face {
+    font-family: Symbols;
+    src: url("asset/font/SymbolsNerdFont-Regular.ttf") format("truetype");
+}
+
+.nfSymbol {
+    font-family: Symbols;
+}
+
 .stackDiv {
     font-size: 0.9rem;
     border-radius: 5px;
