@@ -9,9 +9,6 @@ const ProjectList = () => {
         <Container className="p-0">
             {projects.map((p: Project) => (
                 <div>
-                    {/*<span className="card-header status-card">*/}
-                        {/*{p.active ? "Active" : "Archived"}*/}
-                    {/*</span>*/}
                     <Carousel
                         variant="light"
                         className="mb-1"
@@ -48,7 +45,7 @@ const ProjectList = () => {
                                                         {p.description} {`\uf08e`}
                                                     </a>
                                                 ) : (
-                                                    <span>{p.description}</span>
+                                                    <span className="projectLinkText">{p.description}</span>
                                                 )}
                                             </h6>
                                         </Accordion.Body>
