@@ -14,17 +14,17 @@
 
 body {
     background: var(--background);
-    font-family: ArimoNF, sans-serif;
+    font-family: Arimo, sans-serif;
     color: var(--text);
 }
 
 @font-face {
-    font-family: CousineNF;
+    font-family: Cousine;
     src: url("asset/font/CousineNerdFont-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: ArimoNF;
+    font-family: Arimo;
     src: url("asset/font/ArimoNerdFont-Regular.ttf") format("truetype");
 }
 
@@ -32,10 +32,6 @@ body {
     font-size: 0.9rem;
     border-radius: 5px;
     margin: 5px 5px;
-}
-
-.stackDivIcon {
-    font-size: 1.1rem;
 }
 
 .projectLinkText {
@@ -65,7 +61,8 @@ body {
     filter: invert(0.5)
 }
 
-.fontIcon {
+.fontIcon,
+.stackDivIcon {
     font-size: 1.15rem;
 }
 
@@ -87,39 +84,13 @@ body {
 }
 
 .monospaceText {
-    font-family: "CousineNF", monospace;
+    font-family: Cousine, monospace;
     font-size: large;
 }
 
-.card {
-    border: none;
-}
-
-.card-header {
-    background-color: var(--highlight);
-    border-bottom: none !important;
-}
-
-.status-card {
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 40px;
-    width: 90px;
-    position: absolute;
-    z-index: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13;
-    word-wrap: normal;
-}
-
+.card,
 .card-header:first-child {
     border: none;
-}
-
-.card-footer {
-    background-color: var(--foreground);
 }
 
 .navbar {
@@ -147,7 +118,8 @@ body {
     filter: invert(var(--badge-invert-value));
 }
 
-.theme-switcher {
+.theme-switcher,
+.accordion-item {
     background-color: var(--highlight);
     border-color: var(--highlight);
 }
@@ -179,16 +151,12 @@ body {
     border-color: var(--highlight);
 }
 
-.accordion-item {
-    border-color: var(--highlight);
-    background-color: transparent;
-}
-
 .accordion-button,
 .accordion-button.collapsed,
 .accordion-button.expanded,
 .accordion-button:not(.collapsed) {
     background-color: var(--highlight);
+    color: var(--text);
     background-image: none;
     box-shadow: none !important;
 }
@@ -198,11 +166,9 @@ body {
     background-image: var(--accordion-button-after);
 }
 
-.accordion-body {
-    background-color: var(--foreground);
-}
-
-.badge {
+.accordion-body,
+.badge,
+.card-footer {
     background-color: var(--foreground);
 }
 

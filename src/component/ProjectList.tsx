@@ -9,9 +9,9 @@ const ProjectList = () => {
         <Container className="p-0">
             {projects.map((p: Project) => (
                 <div>
-                    <span className="card-header status-card">
-                        {p.active ? "Active" : "Archived"}
-                    </span>
+                    {/*<span className="card-header status-card">*/}
+                        {/*{p.active ? "Active" : "Archived"}*/}
+                    {/*</span>*/}
                     <Carousel
                         variant="light"
                         className="mb-1"
