@@ -29,8 +29,7 @@ const App = () => {
                     <Col md={4} sm={12} xs={12}>
                         <ExperienceAccordion />
                         <CompentencyList />
-                        <span
-                            className="centered mt-2">Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript</span>
+                        <span className="centered mt-2">Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript</span>
                         <span className="centered mb-2">with {techDealer[Tech.Bootstrap].char} Bootstrap components</span>
                     </Col>
                 </Row>
