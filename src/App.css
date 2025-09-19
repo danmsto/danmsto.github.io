@@ -88,6 +88,11 @@ body {
     font-size: large;
 }
 
+.card-header {
+    background-color: var(--highlight);
+    border-bottom: none !important;
+}
+
 .card,
 .card-header:first-child {
     border: none;
