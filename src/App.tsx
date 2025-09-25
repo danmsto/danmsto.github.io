@@ -30,10 +30,10 @@ const App = () => {
                         <ExperienceAccordion />
                         <CompentencyList />
                         <span className="centered mt-2">
-                            Made using <span className="nfSymbol"> {techDealer[Tech.React].char} </span> React in <span className="nfSymbol">{techDealer[Tech.TypeScript].char}</span> TypeScript
+                            Made using {techDealer[Tech.React].char} React in {techDealer[Tech.TypeScript].char} TypeScript
                         </span>
                         <span className="centered mb-2">
-                            with <span className="nfSymbol">{techDealer[Tech.Bootstrap].char}</span> Bootstrap components
+                            with {techDealer[Tech.Bootstrap].char} Bootstrap components
                         </span>
                     </Col>
                 </Row>
