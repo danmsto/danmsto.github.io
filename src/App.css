@@ -19,8 +19,8 @@ body {
 }
 
 @font-face {
-    font-family: Cousine;
-    src: url("asset/font/CousineNerdFont-Regular.ttf") format("truetype");
+    font-family: Hack;
+    src: url("asset/font/Hack-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -86,7 +86,7 @@ body {
 }
 
 .monospaceText {
-    font-family: Cousine, monospace;
+    font-family: Hack, monospace;
     font-size: large;
 }
 
