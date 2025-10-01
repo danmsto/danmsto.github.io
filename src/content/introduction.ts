@@ -5,9 +5,9 @@ const introduction: Introduction = {
     subHeader: "Coding Academy Graduate & Former Industrial R&D Chemist",
     lines: [
         "MChem in Chemistry",
-        "Ex-Industrial R&D Chemist",
-        "Coding Academy Graduate",
-        "Software Developer",
+        "Industrial R&D Chemist",
+        "Coding Bootcamp Trainee",
+        "Full-stack Software Developer",
     ],
     summary:
         "Target-oriented team player who delivers to a high standard and works well under pressure," +
