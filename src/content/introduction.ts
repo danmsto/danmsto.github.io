@@ -7,7 +7,7 @@ const introduction: Introduction = {
         "MChem in Chemistry",
         "Industrial R&D Chemist",
         "Coding Bootcamp Trainee",
-        "Full-stack Software Developer",
+        "Software Developer",
     ],
     summary:
         "Target-oriented team player who delivers to a high standard and works well under pressure," +
